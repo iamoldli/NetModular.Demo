@@ -7,16 +7,16 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Nm.Lib.Cache.MemoryCache" Version="1.4.0" />
-    <PackageReference Include="Nm.Lib.Data.MySql" Version="1.4.0" />
-    <PackageReference Include="Nm.Lib.Data.SQLite" Version="1.4.0" />
-    <PackageReference Include="Nm.Lib.Data.SqlServer" Version="1.4.0" />
-    <PackageReference Include="Nm.Lib.Host.Web" Version="1.4.0" />
-    <PackageReference Include="Nm.Module.Admin.Web" Version="1.4.0" />
-    <PackageReference Include="Nm.Module.CodeGenerator.Web" Version="1.4.0" />
-    <PackageReference Include="Nm.Module.Common.Web" Version="1.4.0" />
-    <PackageReference Include="Nm.Module.PersonnelFiles.Web" Version="1.4.0" />
-    <PackageReference Include="Nm.Module.Quartz.Web" Version="1.4.0" />
+    <PackageReference Include="NetModular.Lib.Cache.MemoryCache" Version="1.4.1" />
+    <PackageReference Include="NetModular.Lib.Data.MySql" Version="1.4.1" />
+    <PackageReference Include="NetModular.Lib.Data.SQLite" Version="1.4.1" />
+    <PackageReference Include="NetModular.Lib.Data.SqlServer" Version="1.4.1" />
+    <PackageReference Include="NetModular.Lib.Host.Web" Version="1.4.1" />
+    <PackageReference Include="NetModular.Module.Admin.Web" Version="1.4.3" />
+    <PackageReference Include="NetModular.Module.CodeGenerator.Web" Version="1.4.4" />
+    <PackageReference Include="NetModular.Module.Common.Web" Version="1.4.1" />
+    <PackageReference Include="NetModular.Module.PersonnelFiles.Web" Version="1.4.2" />
+    <PackageReference Include="NetModular.Module.Quartz.Web" Version="1.4.2" />
   </ItemGroup>
 
   <!--复制配置文件到输出目录-->

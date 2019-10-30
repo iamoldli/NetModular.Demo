@@ -4,6 +4,8 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const isDev = process.env.NODE_ENV === 'development' // 开发环境
 
 // 增加环境变量
+process.env.VUE_APP_COPYRIGHT =
+  '版权所有：尼古拉斯·老李 | 用代码改变世界 Powered by .NET Core 3.0.0 on Linux'
 process.env.VUE_APP_BUILD_TIME = require('dayjs')().format('YYYYMDHHmmss')
 // 打包输出路径
 const outputDir = '../WebHost/wwwroot/app'
@@ -14,15 +16,15 @@ module.exports = {
   devServer: {
     port: 5220
   },
-  transpileDependencies: ['nm-.*', 'element-ui'],
+  transpileDependencies: ['netmodular-.*', 'element-ui'],
   configureWebpack: {
     plugins: [
       /**
-       * 复制nm-lib-skins/public目录下的文件到输出目录
+       * 复制netmodular-ui/public目录下的文件到输出目录
        */
       new CopyWebpackPlugin([
         {
-          from: path.join(__dirname, 'node_modules/nm-lib-skins/public'),
+          from: path.join(__dirname, 'node_modules/netmodular-ui/public'),
           to: path.join(__dirname, outputDir),
           ignore: ['index.html']
         }
@@ -39,10 +41,10 @@ module.exports = {
     config.plugins.delete('prefetch').delete('preload')
 
     /**
-     * 设置index.html模板路径，使用nm-lib-skins/public中的模板
+     * 设置index.html模板路径，使用netmodular-ui/public中的模板
      */
     config.plugin('html').tap(args => {
-      args[0].template = './node_modules/nm-lib-skins/public/index.html'
+      args[0].template = './node_modules/netmodular-ui/public/index.html'
       return args
     })
 
@@ -80,9 +82,9 @@ module.exports = {
               test: /[\\/]node_modules[\\/]element-ui(.*)/
             },
             skins: {
-              name: 'chunk-skins',
+              name: 'chunk-netmodular-ui',
               priority: 10,
-              test: /[\\/]node_modules[\\/]nm-lib-skins(.*)/
+              test: /[\\/]node_modules[\\/]netmodular-ui(.*)/
             }
           }
         })

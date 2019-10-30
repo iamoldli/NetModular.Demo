@@ -1,16 +1,16 @@
-import WebHost from 'nm-module-admin'
-import Common from 'nm-module-common'
-import CodeGenerator from 'nm-module-code-generator'
-import PersonnelFiles from 'nm-module-personnelfiles'
-import Quartz from 'nm-module-quartz'
+import WebHost from 'netmodular-module-admin'
+import Common from 'netmodular-module-common'
+import CodeGenerator from 'netmodular-module-code-generator'
+import PersonnelFiles from 'netmodular-module-personnelfiles'
+import Quartz from 'netmodular-module-quartz'
 
 import config from './config'
 
 // 注入模块
-WebHost.addModule(Common)
-WebHost.addModule(CodeGenerator)
-WebHost.addModule(PersonnelFiles)
-WebHost.addModule(Quartz)
+WebHost.registerModule(Common)
+WebHost.registerModule(CodeGenerator)
+WebHost.registerModule(PersonnelFiles)
+WebHost.registerModule(Quartz)
 
 // 启动
 WebHost.start(config)
