@@ -8,12 +8,12 @@
 
   <ItemGroup>
     <PackageReference Include="NetModular.Lib.Cache.MemoryCache" Version="1.5.0" />
-    <PackageReference Include="NetModular.Lib.Data.MySql" Version="1.5.0" />
-    <PackageReference Include="NetModular.Lib.Data.SQLite" Version="1.5.0" />
-    <PackageReference Include="NetModular.Lib.Data.SqlServer" Version="1.5.0" />
+    <PackageReference Include="NetModular.Lib.Data.MySql" Version="1.5.1" />
+    <PackageReference Include="NetModular.Lib.Data.SQLite" Version="1.5.1" />
+    <PackageReference Include="NetModular.Lib.Data.SqlServer" Version="1.5.1" />
     <PackageReference Include="NetModular.Lib.Host.Web" Version="1.5.1" />
     <PackageReference Include="NetModular.Module.Admin.Web" Version="1.5.0" />
-    <PackageReference Include="NetModular.Module.CodeGenerator.Web" Version="1.5.2" />
+    <PackageReference Include="NetModular.Module.CodeGenerator.Web" Version="1.5.3" />
     <PackageReference Include="NetModular.Module.Common.Web" Version="1.5.1" />
     <PackageReference Include="NetModular.Module.PersonnelFiles.Web" Version="1.5.0" />
     <PackageReference Include="NetModular.Module.Quartz.Web" Version="1.5.0" />
