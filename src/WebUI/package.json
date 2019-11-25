@@ -15,12 +15,12 @@
     "pub": "cd ./script && npm_publish.ps1"
   },
   "dependencies": {
-    "netmodular-module-admin": "^1.0.6",
+    "netmodular-module-admin": "^1.0.7",
     "netmodular-module-code-generator": "^1.0.4",
-    "netmodular-module-common": "^1.0.4",
+    "netmodular-module-common": "^1.0.5",
     "netmodular-module-personnelfiles": "^1.0.2",
     "netmodular-module-quartz": "^1.0.1",
-    "netmodular-ui": "^1.1.13"
+    "netmodular-ui": "^1.2.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.0.0",
