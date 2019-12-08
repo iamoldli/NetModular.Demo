@@ -38,10 +38,6 @@
       "Database": "Nm_Common"
     },
     {
-      "Name": "PersonnelFiles",
-      "Database": "Nm_PersonnelFiles"
-    },
-    {
       "Name": "Quartz",
       "Database": "Nm_Quartz"
     }

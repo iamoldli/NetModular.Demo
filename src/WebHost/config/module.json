@@ -20,7 +20,9 @@
   //代码生成器
   "CodeGenerator": {
     //项目前缀
-    "Prefix": "Nm"
+    "Prefix": "NetModular",
+    //前端组件前缀
+    "UIPrefix": "Nm"
   },
   //任务调度
   "Quartz": {

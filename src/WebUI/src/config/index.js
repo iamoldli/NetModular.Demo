@@ -1,11 +1,11 @@
-const isDev = process.env.NODE_ENV !== 'production'
+const isDev = process.env.NODE_ENV !== "production";
 
 const config = {
-  baseUrl: 'https://nm.iamoldli.com/api/'
-}
+  baseUrl: "https://nm.iamoldli.com/api/"
+};
 
 // 开发模式
 if (isDev) {
-  config.baseUrl = 'http://localhost:6220/api/'
+  config.baseUrl = "https://nm.iamoldli.com/api/";
 }
-export default config
+export default config;

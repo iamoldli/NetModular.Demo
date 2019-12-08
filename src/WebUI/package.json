@@ -15,19 +15,18 @@
     "pub": "cd ./script && npm_publish.ps1"
   },
   "dependencies": {
-    "netmodular-module-admin": "^1.0.7",
-    "netmodular-module-code-generator": "^1.0.4",
-    "netmodular-module-common": "^1.0.5",
-    "netmodular-module-personnelfiles": "^1.0.2",
-    "netmodular-module-quartz": "^1.0.1",
-    "netmodular-ui": "^1.2.0"
+    "netmodular-module-admin": "^1.1.0",
+    "netmodular-module-code-generator": "^1.0.5",
+    "netmodular-module-common": "^1.0.6",
+    "netmodular-module-quartz": "^1.0.3",
+    "netmodular-ui": "^1.2.4"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^4.0.0",
-    "@vue/cli-plugin-eslint": "^4.0.0",
-    "@vue/cli-plugin-router": "^4.0.0",
-    "@vue/cli-plugin-vuex": "^4.0.0",
-    "@vue/cli-service": "^4.0.0",
+    "@vue/cli-plugin-babel": "^4.1.1",
+    "@vue/cli-plugin-eslint": "^4.1.1",
+    "@vue/cli-plugin-router": "^4.1.1",
+    "@vue/cli-plugin-vuex": "^4.1.1",
+    "@vue/cli-service": "^4.1.1",
     "@vue/eslint-config-prettier": "^5.0.0",
     "babel-eslint": "^10.0.3",
     "eslint": "^5.16.0",
