@@ -11,7 +11,7 @@
  Target Server Version : 80016
  File Encoding         : 65001
 
- Date: 08/12/2019 21:45:03
+ Date: 12/12/2019 08:15:28
 */
 
 SET NAMES utf8mb4;
@@ -48,7 +48,7 @@ CREATE TABLE `account`  (
 -- ----------------------------
 -- Records of account
 -- ----------------------------
-INSERT INTO `account` VALUES ('2E23D1D9-4A72-ACC2-F6FF-39ED21CB6A4A', 0, 'admin', 'E739279CB28CDAFD7373618313803524', '管理员', '', '', '2019-12-08 21:35:05', '112.34.110.149', 1, b'0', '2019-10-09 00:00:00', '00000000-0000-0000-0000-000000000000', '2019-10-09 00:00:00', '00000000-0000-0000-0000-000000000000', '2019-11-25 09:52:40', '2e23d1d9-4a72-acc2-f6ff-39ed21cb6a4a', b'0', '2019-10-09 00:00:00', '00000000-0000-0000-0000-000000000000');
+INSERT INTO `account` VALUES ('2E23D1D9-4A72-ACC2-F6FF-39ED21CB6A4A', 0, 'admin', 'E739279CB28CDAFD7373618313803524', '管理员', '', '', '2019-12-12 08:14:05', '180.111.65.53', 1, b'0', '2019-10-09 00:00:00', '00000000-0000-0000-0000-000000000000', '2019-10-09 00:00:00', '00000000-0000-0000-0000-000000000000', '2019-11-25 09:52:40', '2e23d1d9-4a72-acc2-f6ff-39ed21cb6a4a', b'0', '2019-10-09 00:00:00', '00000000-0000-0000-0000-000000000000');
 INSERT INTO `account` VALUES ('39f1ad1c-3cdb-a9f2-2ce6-edbb6bc16789', 0, 'xiao', '158199E4884B7E0BB4FF62600E84E303', 'xiaoyong', '', '', '2019-11-24 09:03:41', '113.57.244.152', 1, b'0', '2019-11-24 09:03:31', '00000000-0000-0000-0000-000000000000', '2019-11-24 09:03:31', '2e23d1d9-4a72-acc2-f6ff-39ed21cb6a4a', '2019-11-24 09:03:31', '2e23d1d9-4a72-acc2-f6ff-39ed21cb6a4a', b'1', '2019-11-25 09:59:03', '2e23d1d9-4a72-acc2-f6ff-39ed21cb6a4a');
 
 -- ----------------------------
@@ -67,7 +67,7 @@ CREATE TABLE `account_config`  (
 -- ----------------------------
 -- Records of account_config
 -- ----------------------------
-INSERT INTO `account_config` VALUES (1, '2e23d1d9-4a72-acc2-f6ff-39ed21cb6a4a', 'pretty', 'default', 'medium');
+INSERT INTO `account_config` VALUES (1, '2e23d1d9-4a72-acc2-f6ff-39ed21cb6a4a', 'pretty', 'default', 'small');
 INSERT INTO `account_config` VALUES (2, '39f0d074-9e61-c099-ab57-d3539492bfc9', 'pretty', 'default', 'mini');
 
 -- ----------------------------
@@ -179,7 +179,7 @@ CREATE TABLE `button_permission`  (
   `ButtonCode` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `PermissionCode` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   PRIMARY KEY (`Id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 116 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 154 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of button_permission
@@ -296,15 +296,15 @@ CREATE TABLE `config`  (
   `ModifiedTime` datetime(0) NOT NULL DEFAULT CURRENT_TIMESTAMP(0),
   `ModifiedBy` char(36) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   PRIMARY KEY (`Id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 19 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 27 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of config
 -- ----------------------------
-INSERT INTO `config` VALUES (1, 'sys_title', '通用权限管理系统', '系统标题', '2019-09-29 12:02:03', '39f08d5b-177c-a334-34e7-408ef121c6e0', '2019-12-08 21:38:04', '2e23d1d9-4a72-acc2-f6ff-39ed21cb6a4a');
-INSERT INTO `config` VALUES (2, 'sys_logo', 'https://nm.iamoldli.com/upload/admin/logo/2019/12/08/5192a99f63614968b4ffc5b747fca77e.png', '系统Logo', '2019-09-29 12:02:03', '39f08d5b-177c-a334-34e7-408ef121c6e0', '2019-12-08 21:38:04', '2e23d1d9-4a72-acc2-f6ff-39ed21cb6a4a');
-INSERT INTO `config` VALUES (3, 'sys_home', '/admin/home', '系统首页地址', '2019-09-29 12:02:03', '39f08d5b-177c-a334-34e7-408ef121c6e0', '2019-12-08 21:38:04', '2e23d1d9-4a72-acc2-f6ff-39ed21cb6a4a');
-INSERT INTO `config` VALUES (4, 'sys_userinfo_page', '', '个人信息页', '2019-09-29 12:02:03', '39f08d5b-177c-a334-34e7-408ef121c6e0', '2019-12-08 21:38:04', '2e23d1d9-4a72-acc2-f6ff-39ed21cb6a4a');
+INSERT INTO `config` VALUES (1, 'sys_title', '通用权限管理系统', '系统标题', '2019-09-29 12:02:03', '39f08d5b-177c-a334-34e7-408ef121c6e0', '2019-12-11 23:48:35', '2e23d1d9-4a72-acc2-f6ff-39ed21cb6a4a');
+INSERT INTO `config` VALUES (2, 'sys_logo', 'https://nm.iamoldli.com/upload/admin/logo/2019/12/08/5192a99f63614968b4ffc5b747fca77e.png', '系统Logo', '2019-09-29 12:02:03', '39f08d5b-177c-a334-34e7-408ef121c6e0', '2019-12-11 23:48:35', '2e23d1d9-4a72-acc2-f6ff-39ed21cb6a4a');
+INSERT INTO `config` VALUES (3, 'sys_home', '/admin/home', '系统首页地址', '2019-09-29 12:02:03', '39f08d5b-177c-a334-34e7-408ef121c6e0', '2019-12-11 23:48:35', '2e23d1d9-4a72-acc2-f6ff-39ed21cb6a4a');
+INSERT INTO `config` VALUES (4, 'sys_userinfo_page', '', '个人信息页', '2019-09-29 12:02:03', '39f08d5b-177c-a334-34e7-408ef121c6e0', '2019-12-11 23:48:35', '2e23d1d9-4a72-acc2-f6ff-39ed21cb6a4a');
 INSERT INTO `config` VALUES (5, 'sys_button_permission', 'True', '启用按钮权限', '2019-09-29 12:02:03', '39f08d5b-177c-a334-34e7-408ef121c6e0', '2019-11-25 23:01:50', '2e23d1d9-4a72-acc2-f6ff-39ed21cb6a4a');
 INSERT INTO `config` VALUES (6, 'sys_permission_validate', 'True', '开启权限验证', '2019-09-29 12:02:03', '39f08d5b-177c-a334-34e7-408ef121c6e0', '2019-12-08 21:19:37', '2e23d1d9-4a72-acc2-f6ff-39ed21cb6a4a');
 INSERT INTO `config` VALUES (7, 'sys_auditing', 'True', '启用审计日志', '2019-09-29 12:02:03', '39f08d5b-177c-a334-34e7-408ef121c6e0', '2019-11-25 23:01:50', '2e23d1d9-4a72-acc2-f6ff-39ed21cb6a4a');
@@ -318,7 +318,7 @@ INSERT INTO `config` VALUES (14, 'sys_menu_unique_opened', 'True', '菜单只能
 INSERT INTO `config` VALUES (15, 'sys_dialog_close_on_click_modal', 'True', '点击模态框关闭对话框', '2019-11-22 12:22:34', '2e23d1d9-4a72-acc2-f6ff-39ed21cb6a4a', '2019-11-25 23:01:50', '2e23d1d9-4a72-acc2-f6ff-39ed21cb6a4a');
 INSERT INTO `config` VALUES (16, 'sys_login_options_type', 'neon', '登录页类型', '2019-11-22 12:22:34', '2e23d1d9-4a72-acc2-f6ff-39ed21cb6a4a', '2019-11-25 23:01:50', '2e23d1d9-4a72-acc2-f6ff-39ed21cb6a4a');
 INSERT INTO `config` VALUES (17, 'sys_login_options_verify_code', 'False', '启用登录验证码功能', '2019-11-22 12:22:34', '2e23d1d9-4a72-acc2-f6ff-39ed21cb6a4a', '2019-11-25 23:01:50', '2e23d1d9-4a72-acc2-f6ff-39ed21cb6a4a');
-INSERT INTO `config` VALUES (18, 'sys_copyright', '版权所有：尼古拉斯·老李 | 用代码改变世界 Powered byET Core 3.1.0 on Linux', '版权声明', '2019-11-22 12:22:34', '2e23d1d9-4a72-acc2-f6ff-39ed21cb6a4a', '2019-12-08 21:38:04', '2e23d1d9-4a72-acc2-f6ff-39ed21cb6a4a');
+INSERT INTO `config` VALUES (18, 'sys_copyright', '版权所有：尼古拉斯·老李 | 用代码改变世界 Powered by .Net Core 3.1.0 on Linux', '版权声明', '2019-11-22 12:22:34', '2e23d1d9-4a72-acc2-f6ff-39ed21cb6a4a', '2019-12-11 23:48:35', '2e23d1d9-4a72-acc2-f6ff-39ed21cb6a4a');
 INSERT INTO `config` VALUES (19, 'sys_permission_button', 'True', '启用按钮权限', '2019-12-08 21:19:37', '2e23d1d9-4a72-acc2-f6ff-39ed21cb6a4a', '2019-12-08 21:19:37', '2e23d1d9-4a72-acc2-f6ff-39ed21cb6a4a');
 INSERT INTO `config` VALUES (20, 'sys_permission_auditing', 'True', '审计日志', '2019-12-08 21:19:37', '2e23d1d9-4a72-acc2-f6ff-39ed21cb6a4a', '2019-12-08 21:19:37', '2e23d1d9-4a72-acc2-f6ff-39ed21cb6a4a');
 INSERT INTO `config` VALUES (21, 'sys_login_type', 'neon', '登录页类型', '2019-12-08 21:19:41', '2e23d1d9-4a72-acc2-f6ff-39ed21cb6a4a', '2019-12-08 21:19:41', '2e23d1d9-4a72-acc2-f6ff-39ed21cb6a4a');
@@ -367,7 +367,7 @@ INSERT INTO `menu` VALUES ('39f08dac-9b84-9a56-20b9-26789223a74f', '', 0, '00000
 INSERT INTO `menu` VALUES ('39f08dad-0641-fb8c-d3ab-b3bdcb803500', '', 0, '00000000-0000-0000-0000-000000000000', '基础数据', '', '', '', '', 'user', NULL, 0, b'1', 1, -1, '', '', b'1', '', '2019-09-29 13:31:01', '39f08d5b-177c-a334-34e7-408ef121c6e0', '2019-11-25 23:01:03', '2e23d1d9-4a72-acc2-f6ff-39ed21cb6a4a');
 INSERT INTO `menu` VALUES ('39f08dad-3e6f-5955-ccdf-96b081a39bdd', '', 0, '00000000-0000-0000-0000-000000000000', '任务调度', '', '', '', '', 'timer', NULL, 0, b'1', 2, -1, '', '', b'1', '', '2019-09-29 13:31:15', '39f08d5b-177c-a334-34e7-408ef121c6e0', '2019-11-25 23:01:03', '2e23d1d9-4a72-acc2-f6ff-39ed21cb6a4a');
 INSERT INTO `menu` VALUES ('39f08dad-6b9b-0fa4-767f-3b85eebbd534', '', 0, '00000000-0000-0000-0000-000000000000', '开发工具', '', '', '', '', 'develop', '', 0, b'1', 5, -1, '', '', b'1', '', '2019-09-29 13:31:27', '39f08d5b-177c-a334-34e7-408ef121c6e0', '2019-11-25 23:01:03', '2e23d1d9-4a72-acc2-f6ff-39ed21cb6a4a');
-INSERT INTO `menu` VALUES ('39f08dad-aca0-7ddf-61d1-0b6ac0841b64', '', 2, '00000000-0000-0000-0000-000000000000', 'GitHub', '', '', '', 'https://github.com/iamoldli/NetModular', 'github', '', 0, b'1', 7, 4, '', '', b'1', '', '2019-09-29 13:31:44', '39f08d5b-177c-a334-34e7-408ef121c6e0', '2019-11-25 23:01:03', '2e23d1d9-4a72-acc2-f6ff-39ed21cb6a4a');
+INSERT INTO `menu` VALUES ('39f08dad-aca0-7ddf-61d1-0b6ac0841b64', '', 2, '00000000-0000-0000-0000-000000000000', 'GitHub', '', '', '', 'https://github.com/iamoldli/NetModular', 'github', '', 0, b'1', 7, 0, '', '', b'1', '', '2019-09-29 13:31:44', '39f08d5b-177c-a334-34e7-408ef121c6e0', '2019-12-11 23:50:14', '2e23d1d9-4a72-acc2-f6ff-39ed21cb6a4a');
 INSERT INTO `menu` VALUES ('39f08dae-d22c-4988-0dd9-098fe905e5bd', 'Common', 1, '39f08dad-0641-fb8c-d3ab-b3bdcb803500', '区划代码', 'common_area', '', '', '', 'area', '', 1, b'1', 1, 0, '', '', b'1', '', '2019-09-29 13:32:59', '39f08d5b-177c-a334-34e7-408ef121c6e0', '2019-12-08 21:16:46', '2e23d1d9-4a72-acc2-f6ff-39ed21cb6a4a');
 INSERT INTO `menu` VALUES ('39f08dae-e142-29fb-f4d4-4f8574d5d3b6', 'Common', 1, '39f08dad-0641-fb8c-d3ab-b3bdcb803500', '附件管理', 'common_attachment', '', '', '', 'attachment', '', 1, b'1', 0, 0, '', '', b'1', '', '2019-09-29 13:33:03', '39f08d5b-177c-a334-34e7-408ef121c6e0', '2019-12-08 21:16:42', '2e23d1d9-4a72-acc2-f6ff-39ed21cb6a4a');
 INSERT INTO `menu` VALUES ('39f08daf-10e1-d0ef-f1be-27d6254133fe', 'Quartz', 1, '39f08dad-3e6f-5955-ccdf-96b081a39bdd', '任务分组', 'quartz_group', '', '', '', 'group', '', 1, b'1', 0, 0, '', '', b'1', '', '2019-09-29 13:33:15', '39f08d5b-177c-a334-34e7-408ef121c6e0', '2019-12-08 21:17:02', '2e23d1d9-4a72-acc2-f6ff-39ed21cb6a4a');
@@ -397,7 +397,7 @@ CREATE TABLE `menu_permission`  (
   `MenuCode` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `PermissionCode` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   PRIMARY KEY (`Id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 32 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 50 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of menu_permission
@@ -686,7 +686,7 @@ CREATE TABLE `role_menu`  (
   `RoleId` char(36) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `MenuId` char(36) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   PRIMARY KEY (`Id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 2328 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 2354 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of role_menu
@@ -753,13 +753,11 @@ INSERT INTO `role_menu_button` VALUES (54, '39f08d5b-173b-1cbb-7381-407c87b2e8e2
 INSERT INTO `role_menu_button` VALUES (55, '39f08d5b-173b-1cbb-7381-407c87b2e8e2', '39f08db3-f74c-72f6-f901-26a8a0677346', '39f08db3-f7d6-7533-682f-739e51d10ae1');
 INSERT INTO `role_menu_button` VALUES (64, '39f08d5b-173b-1cbb-7381-407c87b2e8e2', '39f08daf-9b05-80d5-a7f5-21e450af9b70', '39f08daf-9b1f-b315-ccc8-4ed480ae2595');
 INSERT INTO `role_menu_button` VALUES (65, '39f08d5b-173b-1cbb-7381-407c87b2e8e2', '39f08daf-9b05-80d5-a7f5-21e450af9b70', '39f08daf-9b13-0809-b6f5-64d2430a37c4');
-INSERT INTO `role_menu_button` VALUES (70, '39f08d5b-173b-1cbb-7381-407c87b2e8e2', '39f08dae-e142-29fb-f4d4-4f8574d5d3b6', '39f08dae-e147-307d-4b87-1742fa9e5885');
 INSERT INTO `role_menu_button` VALUES (93, '39f08d5b-173b-1cbb-7381-407c87b2e8e2', '39f08daf-a689-5e91-dce9-e6d0088d29dc', '39f08daf-a6a3-772f-7559-4a22f0614589');
 INSERT INTO `role_menu_button` VALUES (94, '39f08d5b-173b-1cbb-7381-407c87b2e8e2', '39f08daf-a689-5e91-dce9-e6d0088d29dc', '39f08daf-a6b0-0ea0-58c4-918941c668b2');
 INSERT INTO `role_menu_button` VALUES (95, '39f08d5b-173b-1cbb-7381-407c87b2e8e2', '39f08daf-a689-5e91-dce9-e6d0088d29dc', '39f08daf-a6b9-a4ac-5953-a4e4074ef3b0');
 INSERT INTO `role_menu_button` VALUES (96, '39f08d5b-173b-1cbb-7381-407c87b2e8e2', '39f08daf-a689-5e91-dce9-e6d0088d29dc', '39f08daf-a6cc-8c2f-e31a-9c91f6c6afce');
 INSERT INTO `role_menu_button` VALUES (100, '39f08d5b-173b-1cbb-7381-407c87b2e8e2', '39f08daf-7355-6fb9-cfe6-b9804de226f9', '39f08daf-7379-0830-a724-272048d335c4');
-INSERT INTO `role_menu_button` VALUES (101, '39f08d5b-173b-1cbb-7381-407c87b2e8e2', '39f08dae-e142-29fb-f4d4-4f8574d5d3b6', '39f08dae-e157-e486-3d68-06e5152d5e50');
 INSERT INTO `role_menu_button` VALUES (107, '39f08d5b-173b-1cbb-7381-407c87b2e8e2', '39f08dae-d22c-4988-0dd9-098fe905e5bd', '39f08dae-d23c-c202-2cc8-d4ac00483563');
 INSERT INTO `role_menu_button` VALUES (109, '39f08d5b-173b-1cbb-7381-407c87b2e8e2', '39f08daf-4489-44fd-b2ca-06acd10db080', '39f08daf-4498-7ee7-797c-a2ab7871b505');
 INSERT INTO `role_menu_button` VALUES (111, '39f08d5b-173b-1cbb-7381-407c87b2e8e2', '39f08daf-4489-44fd-b2ca-06acd10db080', '39f08daf-44ad-ac06-083a-c5a44b8e99dc');
@@ -779,5 +777,7 @@ INSERT INTO `role_menu_button` VALUES (202, '39f08d5b-173b-1cbb-7381-407c87b2e8e
 INSERT INTO `role_menu_button` VALUES (203, '39f08d5b-173b-1cbb-7381-407c87b2e8e2', '39f1b274-f5a4-cbfd-adf3-db37c55c3659', '39f1b274-f5aa-4a1f-aec1-ca53398b26a6');
 INSERT INTO `role_menu_button` VALUES (204, '39f08d5b-173b-1cbb-7381-407c87b2e8e2', '39f1b274-f5a4-cbfd-adf3-db37c55c3659', '39f1b274-f5ac-ae7a-0799-c85f7124596e');
 INSERT INTO `role_menu_button` VALUES (205, '39f08d5b-173b-1cbb-7381-407c87b2e8e2', '39f1b274-f5a4-cbfd-adf3-db37c55c3659', '39f1b274-f5ae-d538-1483-395d20c8fbfe');
+INSERT INTO `role_menu_button` VALUES (206, '39f08d5b-173b-1cbb-7381-407c87b2e8e2', '39f08dae-e142-29fb-f4d4-4f8574d5d3b6', '39f08dae-e147-307d-4b87-1742fa9e5885');
+INSERT INTO `role_menu_button` VALUES (207, '39f08d5b-173b-1cbb-7381-407c87b2e8e2', '39f08dae-e142-29fb-f4d4-4f8574d5d3b6', '39f08dae-e157-e486-3d68-06e5152d5e50');
 
 SET FOREIGN_KEY_CHECKS = 1;
