@@ -25,5 +25,8 @@
     ],
     "beautify.config": {
         "brace_style": "collapse,preserve-inline"
+    },
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
     }
 }
