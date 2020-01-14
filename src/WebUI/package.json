@@ -15,13 +15,13 @@
     "pub": "cd ./script && npm_publish.ps1"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.7.0",
-    "netmodular-module-admin": "^1.1.2",
-    "netmodular-module-code-generator": "^1.0.6",
+    "@babel/polyfill": "^7.8.3",
+    "netmodular-module-admin": "^1.1.5",
+    "netmodular-module-code-generator": "^1.0.8",
     "netmodular-module-common": "^1.0.7",
     "netmodular-module-quartz": "^1.0.3",
     "netmodular-skins-classics": "^1.0.1",
-    "netmodular-ui": "^1.2.11"
+    "netmodular-ui": "^1.4.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.1.1",
@@ -38,7 +38,7 @@
     "raw-loader": "^3.1.0",
     "rimraf": "^3.0.0",
     "sass": "^1.22.10",
-    "sass-loader": "^8.0.0",
+    "sass-loader": "^8.0.2",
     "vue-template-compiler": "^2.6.11"
   }
 }
