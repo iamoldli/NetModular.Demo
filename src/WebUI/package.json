@@ -9,7 +9,7 @@
     "lint": "vue-cli-service lint",
     "cm": "rimraf node_modules",
     "cc": "rimraf node_modules/.cache",
-    "pub": "npm run build && pscp -r ../WebHost/wwwroot/app/ root@129.211.40.240:/var/local/netmodular/wwwroot/app/"
+    "pub": "pscp -r ../WebHost/wwwroot/app/index.html root@176.122.186.58:/var/local/netmodular"
   },
   "dependencies": {
     "@babel/polyfill": "^7.8.3",
