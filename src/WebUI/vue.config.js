@@ -8,7 +8,7 @@ process.env.VUE_APP_COPYRIGHT = '版权所有：尼古拉斯·老李 | 用代码
 process.env.VUE_APP_BUILD_TIME = require('dayjs')().format('YYYYMDHHmmss')
 // 打包输出路径
 const outputDir = '../WebHost/wwwroot/app'
-const publicPath = isDev ? '' : 'https://static.nm.iamoldli.com/demo/'
+const publicPath = isDev ? '' : 'https://demo.nm.iamoldli.com/'
 
 module.exports = {
   outputDir,
