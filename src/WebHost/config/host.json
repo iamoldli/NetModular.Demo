@@ -4,5 +4,6 @@
   //开启Swagger
   "Swagger": true,
   //代理
-  "Proxy": true
+  "Proxy": true,
+  "PreflightMaxAge": 360000 
 }
