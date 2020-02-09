@@ -15,6 +15,8 @@
   "Password": "",
   //是否创建数据库和表
   "CreateDatabase": false,
+  //是否创建数据库后初始化数据
+  "InitData": false,
   //模块列表
   "Modules": [
     {
