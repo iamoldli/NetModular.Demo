@@ -1,8 +1,7 @@
 const isDev = process.env.NODE_ENV !== 'production'
 
 const config = {
-  // baseUrl: 'https://api.demo.17mkh.com/api/'
-  baseUrl: 'https://api.nm.iamoldli.com/api/'
+  baseUrl: 'https://api.demo.17mkh.com/api/'
 }
 
 // 开发模式
