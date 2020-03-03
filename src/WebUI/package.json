@@ -12,12 +12,13 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.8.3",
-    "netmodular-module-admin": "^1.2.1",
+    "netmodular-module-admin": "^1.2.3",
     "netmodular-module-code-generator": "^1.0.10",
     "netmodular-module-common": "^1.0.7",
+    "netmodular-module-personnelfiles": "^1.0.3",
     "netmodular-module-quartz": "^1.0.3",
     "netmodular-skins-classics": "^1.0.1",
-    "netmodular-ui": "^1.4.3"
+    "netmodular-ui": "^1.5.3"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.1.1",

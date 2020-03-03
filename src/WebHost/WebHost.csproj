@@ -9,13 +9,14 @@
   <ItemGroup>
     <PackageReference Include="NetModular.Lib.Cache.MemoryCache" Version="1.7.2" />
     <PackageReference Include="NetModular.Lib.Cache.Redis" Version="1.7.2" />
-    <PackageReference Include="NetModular.Lib.Data.MySql" Version="1.7.2" />
+    <PackageReference Include="NetModular.Lib.Data.MySql" Version="1.7.5" />
     <PackageReference Include="NetModular.Lib.Excel.EPPlus" Version="1.7.2" />
-    <PackageReference Include="NetModular.Lib.Host.Web" Version="1.7.2" />
-    <PackageReference Include="NetModular.Lib.Utils.Core" Version="1.7.2" />
-    <PackageReference Include="NetModular.Module.Admin.Web" Version="1.7.2" />
-    <PackageReference Include="NetModular.Module.CodeGenerator.Web" Version="1.6.2" />
-    <PackageReference Include="NetModular.Module.Common.Web" Version="1.5.9" />
+    <PackageReference Include="NetModular.Lib.Host.Web" Version="1.7.7" />
+    <PackageReference Include="NetModular.Lib.Utils.Core" Version="1.7.5" />
+    <PackageReference Include="NetModular.Module.Admin.Web" Version="1.7.9" />
+    <PackageReference Include="NetModular.Module.CodeGenerator.Web" Version="1.6.3" />
+    <PackageReference Include="NetModular.Module.Common.Web" Version="1.6.0" />
+    <PackageReference Include="NetModular.Module.PersonnelFiles.Web" Version="1.5.2" />
     <PackageReference Include="NetModular.Module.Quartz.Web" Version="1.5.6" />
   </ItemGroup>
 
