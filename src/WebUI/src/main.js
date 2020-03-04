@@ -1,6 +1,6 @@
 import WebHost from 'netmodular-module-admin'
 import Common from 'netmodular-module-common'
-import CodeGenerator from 'netmodular-module-code-generator'
+import CodeGenerator from 'netmodular-module-codegenerator'
 import Quartz from 'netmodular-module-quartz'
 import PersonnelFiles from 'netmodular-module-personnelfiles'
 
