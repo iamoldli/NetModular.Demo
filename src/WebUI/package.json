@@ -13,12 +13,12 @@
   "dependencies": {
     "@babel/polyfill": "^7.8.3",
     "netmodular-module-admin": "^1.2.3",
-    "netmodular-module-codegenerator": "^1.0.0",
-    "netmodular-module-common": "^1.0.7",
+    "netmodular-module-codegenerator": "^1.0.2",
+    "netmodular-module-common": "^1.1.5",
     "netmodular-module-personnelfiles": "^1.1.0",
     "netmodular-module-quartz": "^1.0.3",
-    "netmodular-skins-classics": "^1.0.2",
-    "netmodular-ui": "^1.5.3"
+    "netmodular-skins-classics": "^1.0.4",
+    "netmodular-ui": "^1.6.6"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.1.1",
@@ -34,7 +34,7 @@
     "prettier": "^1.18.2",
     "raw-loader": "^3.1.0",
     "rimraf": "^3.0.0",
-    "sass": "^1.25.0",
+    "sass": "^1.26.3",
     "sass-loader": "^8.0.2",
     "vue-template-compiler": "^2.6.11"
   }
