@@ -6,13 +6,13 @@
   //数据库版本
   "Version": "",
   //数据库地址
-  "Server": "129.211.40.240",
+  "Server": "localhost",
   //端口号
-  "Port": 13306,
+  "Port": 3306,
   //用户名
   "UserId": "root",
   //密码
-  "Password": "oldli!@#123",
+  "Password": "root",
   //是否创建数据库和表
   "CreateDatabase": false,
   //是否创建数据库后初始化数据
