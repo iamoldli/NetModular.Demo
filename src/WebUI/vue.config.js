@@ -1,21 +1,22 @@
 const path = require('path')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const TerserPlugin = require('terser-webpack-plugin')
-const isDev = process.env.NODE_ENV === 'development' // 开发环境
+// 开发环境
+const isDev = process.env.NODE_ENV === 'development'
+// 打包输出路径
+const outputDir = '../WebHost/wwwroot/app'
 
 // 增加环境变量
 process.env.VUE_APP_COPYRIGHT = '版权所有：尼古拉斯·老李 | 用代码改变世界 Powered by .Net Core 3.1.0 on Linux'
 process.env.VUE_APP_BUILD_TIME = require('dayjs')().format('YYYYMDHHmmss')
-// 打包输出路径
-const outputDir = '../WebHost/wwwroot/app'
 
 module.exports = {
-  outputDir,
-  publicPath: '',
+  outputDir: outputDir,
+  publicPath: isDev ? '' : 'https://demo.nm.iamoldli.com/',
   devServer: {
     port: 5220
   },
-  transpileDependencies: ['netmodular.*', 'element-ui'],
+  transpileDependencies: ['netmodular-*', 'element-ui'],
   configureWebpack() {
     let config = {
       plugins: [
