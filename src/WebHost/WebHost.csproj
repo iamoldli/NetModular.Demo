@@ -8,23 +8,18 @@
 
   <ItemGroup>
     <PackageReference Include="NetModular.Lib.Cache.MemoryCache" Version="1.9.13" />
-    <PackageReference Include="NetModular.Lib.Data.MySql" Version="1.9.14" />
+    <PackageReference Include="NetModular.Lib.Data.MySql" Version="1.9.15" />
     <PackageReference Include="NetModular.Lib.Excel.EPPlus" Version="1.9.6" />
-    <PackageReference Include="NetModular.Lib.Host.Web" Version="1.9.11" />
+    <PackageReference Include="NetModular.Lib.Host.Web" Version="1.9.13" />
     <PackageReference Include="NetModular.Lib.Utils.Core" Version="1.9.7" />
-    <PackageReference Include="NetModular.Module.Admin.Quartz" Version="1.9.10" />
-    <PackageReference Include="NetModular.Module.Admin.Web" Version="1.9.10" />
-    <PackageReference Include="NetModular.Module.CodeGenerator.Web" Version="1.7.6" />
+    <PackageReference Include="NetModular.Module.Admin.Quartz" Version="1.9.12" />
+    <PackageReference Include="NetModular.Module.Admin.Web" Version="1.9.12" />
+    <PackageReference Include="NetModular.Module.CodeGenerator.Web" Version="1.7.8" />
     <PackageReference Include="NetModular.Module.Common.Web" Version="1.6.9" />
     <PackageReference Include="NetModular.Module.PersonnelFiles.Web" Version="1.6.1" />
     <PackageReference Include="NetModular.Module.Quartz.Web" Version="1.6.4" />
   </ItemGroup>
 
   <!--复制配置文件到输出目录-->
-  <ItemGroup>
-    <Content Update="config\**">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
 
 </Project>

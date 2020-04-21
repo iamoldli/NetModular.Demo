@@ -1,9 +1,0 @@
-{
-  //地址
-  "Urls": "http://*:6220",
-  //开启Swagger
-  "Swagger": true,
-  //代理
-  "Proxy": true,
-  "PreflightMaxAge": 360000 
-}
