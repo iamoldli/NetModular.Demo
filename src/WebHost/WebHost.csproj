@@ -9,7 +9,7 @@
   <ItemGroup>
     <PackageReference Include="NetModular.Lib.Cache.MemoryCache" Version="1.9.13" />
     <PackageReference Include="NetModular.Lib.Data.MySql" Version="1.9.15" />
-    <PackageReference Include="NetModular.Lib.Excel.EPPlus" Version="1.9.6" />
+    <PackageReference Include="NetModular.Lib.Excel.EPPlus" Version="1.9.7" />
     <PackageReference Include="NetModular.Lib.Host.Web" Version="1.9.13" />
     <PackageReference Include="NetModular.Lib.Utils.Core" Version="1.9.7" />
     <PackageReference Include="NetModular.Module.Admin.Quartz" Version="1.9.12" />
