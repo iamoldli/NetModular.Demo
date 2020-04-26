@@ -11,7 +11,7 @@
  Target Server Version : 80016
  File Encoding         : 65001
 
- Date: 26/04/2020 16:50:35
+ Date: 26/04/2020 16:52:47
 */
 
 SET NAMES utf8mb4;
@@ -328,7 +328,8 @@ INSERT INTO `config` VALUES (2, 0, 'System', '{\"title\":\"NetModular通用权�
 INSERT INTO `config` VALUES (3, 0, 'Component', '{\"login\":{\"pageType\":\"neon\",\"verifyCode\":false},\"menu\":{\"uniqueOpened\":true},\"dialog\":{\"closeOnClickModal\":true,\"draggable\":true},\"list\":{\"serialNumberName\":null},\"tabnav\":{\"enabled\":true,\"showHome\":true,\"homeUrl\":\"/admin/home\",\"showIcon\":true,\"maxOpenCount\":100},\"toolbar\":{\"fullscreen\":true,\"skin\":true,\"logout\":true,\"userInfo\":true},\"customCss\":null}');
 INSERT INTO `config` VALUES (4, 0, 'Auth', '{\"verifyCode\":false,\"validate\":true,\"button\":true,\"singleAccount\":false,\"jwt\":{\"key\":\"twAJ$j5##pVc5*y&\",\"issuer\":\"http://127.0.0.1:6220\",\"audience\":\"http://127.0.0.1:6220\",\"expires\":120,\"refreshTokenExpires\":7},\"loginMode\":{\"userName\":true,\"email\":true,\"userNameOrEmail\":true,\"phone\":true,\"weChatScanCode\":false,\"qq\":false,\"gitHub\":false}}');
 INSERT INTO `config` VALUES (5, 0, 'Quartz', '{\"enabled\":true,\"logger\":true,\"instanceName\":\"QuartzServer\",\"tablePrefix\":\"QRTZ_\",\"serializerType\":0,\"provider\":1,\"connectionString\":\"server=127.0.0.1;port=13306;database=nm_quartz;user id=root;password=oldli!@#123;allowuservariables=True;characterset=utf8;sslmode=None;allowpublickeyretrieval=True;minpoolsize=0;maxpoolsize=10\",\"dataSource\":\"default\"}');
-INSERT INTO `config` VALUES (6, 1, 'Common', '{\"dictCacheEnabled\":false}');
+INSERT INTO `config` VALUES (6, 1, 'Common', '{\"dictCacheEnabled\":true}');
+INSERT INTO `config` VALUES (7, 1, 'PersonnelFiles', '{\"companyName\":\"武林联盟数字科技有限公司\",\"companyAddress\":null,\"companyContact\":null,\"companyPhone\":null,\"companyFax\":null}');
 
 -- ----------------------------
 -- Table structure for menu
@@ -464,11 +465,11 @@ CREATE TABLE `module`  (
 -- ----------------------------
 -- Records of module
 -- ----------------------------
-INSERT INTO `module` VALUES ('39f49fc7-d109-b063-a2d0-bda06ea1de6d', 0, '权限管理', 'Admin', 'permission', '1.9.15', '权限管理模块用于身份认证以及授权等功能', 141890);
+INSERT INTO `module` VALUES ('39f49fc7-d109-b063-a2d0-bda06ea1de6d', 0, '权限管理', 'Admin', 'permission', '1.9.15', '权限管理模块用于身份认证以及授权等功能', 141896);
 INSERT INTO `module` VALUES ('39f4a4a3-9f81-ce72-0f31-3ef3153a8622', 1, '通用模块', 'Common', 'database', '1.6.8', 'NetModular Module 01(通用模块) - WebHost', 46945);
 INSERT INTO `module` VALUES ('39f4a4a3-9f9d-0c61-f757-3baa42f066d6', 2, '代码生成', 'CodeGenerator', 'develop', '1.7.7', 'NetModular Module CodeGenerator(代码生成) - WebHost', 36261);
-INSERT INTO `module` VALUES ('39f4a4a3-9fa9-b39c-cb77-4a756254dc03', 3, '任务调度', 'Quartz', 'timer', '1.6.3', 'NetModular Module Quartz(任务调度) - WebHost', 25268);
-INSERT INTO `module` VALUES ('39f4a4a3-9faf-32dc-7d77-db513a4b490a', 4, '人事档案', 'PersonnelFiles', 'personnel-files', '1.6.1', 'NetModular Module PersonnelFiles(人事档案) - WebHost', 52667);
+INSERT INTO `module` VALUES ('39f4a4a3-9fa9-b39c-cb77-4a756254dc03', 3, '任务调度', 'Quartz', 'timer', '1.6.3', 'NetModular Module Quartz(任务调度) - WebHost', 25276);
+INSERT INTO `module` VALUES ('39f4a4a3-9faf-32dc-7d77-db513a4b490a', 4, '人事档案', 'PersonnelFiles', 'personnel-files', '1.6.1', 'NetModular Module PersonnelFiles(人事档案) - WebHost', 52670);
 
 -- ----------------------------
 -- Table structure for permission
