@@ -4,6 +4,7 @@ const TerserPlugin = require('terser-webpack-plugin')
 // 增加环境变量
 process.env.VUE_APP_COPYRIGHT = '版权所有：尼古拉斯·老李 | 用代码改变世界 Powered by .Net Core 3.1.0 on Linux'
 process.env.VUE_APP_BUILD_TIME = require('dayjs')().format('YYYYMDHHmmss')
+process.env.VUE_APP_CUSTOM_SCRIPTS = ''
 
 // 开发环境
 const isDev = process.env.NODE_ENV === 'development'
