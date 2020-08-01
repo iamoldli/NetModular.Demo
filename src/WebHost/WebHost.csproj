@@ -9,17 +9,17 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="NetModular.Lib.Cache.MemoryCache" Version="1.9.17" />
-		<PackageReference Include="NetModular.Lib.Data.MySql" Version="1.9.28" />
-		<PackageReference Include="NetModular.Lib.Excel.EPPlus" Version="1.9.10" />
-		<PackageReference Include="NetModular.Lib.Host.Web" Version="1.9.30" />
-		<PackageReference Include="NetModular.Lib.OSS.Local" Version="1.9.6" />
-		<PackageReference Include="NetModular.Module.Admin.Quartz" Version="1.9.25" />
-		<PackageReference Include="NetModular.Module.Admin.Web" Version="1.9.27" />
+		<PackageReference Include="NetModular.Lib.Cache.MemoryCache" Version="2.0.0" />
+		<PackageReference Include="NetModular.Lib.Data.MySql" Version="2.0.0" />
+		<PackageReference Include="NetModular.Lib.Excel.EPPlus" Version="2.0.0" />
+		<PackageReference Include="NetModular.Lib.Host.Web" Version="2.0.0" />
+		<PackageReference Include="NetModular.Lib.OSS.Local" Version="2.0.0" />
+		<PackageReference Include="NetModular.Module.Admin.Quartz" Version="2.0.0" />
+		<PackageReference Include="NetModular.Module.Admin.Web" Version="2.0.0" />
 		<PackageReference Include="NetModular.Module.CodeGenerator.Web" Version="1.7.14" />
 		<PackageReference Include="NetModular.Module.Common.Web" Version="1.7.6" />
-		<PackageReference Include="NetModular.Module.PersonnelFiles.Web" Version="1.6.5" />
-		<PackageReference Include="NetModular.Module.Quartz.Web" Version="1.6.8" />
+		<PackageReference Include="NetModular.Module.PersonnelFiles.Web" Version="1.6.6" />
+		<PackageReference Include="NetModular.Module.Quartz.Web" Version="1.6.9" />
 	</ItemGroup>
 
 	<!--复制配置文件到输出目录-->
