@@ -1,8 +1,8 @@
-import cloud from './cloud.vue'
+import ad from './ad.vue'
 
 export default [
   {
-    name: 'nm-toolbar-cloud',
-    component: cloud
+    name: 'nm-toolbar-ad',
+    component: ad
   }
 ]

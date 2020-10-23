@@ -3,15 +3,13 @@
     <el-badge :value="5">
       <nm-button type="text" class="nm-toolbar-button bell" icon="bell" @click="visible = !visible" />
     </el-badge>
-    <nm-dialog v-bind="dialog" :visible.sync="visible">
-      <div class="nm-p-10">
-        <p class="nm-p-10 nm-size-20 nm-text-center">开源不易，如果有云服务器需要，可以通过下方链接购买，让我给老婆孩子赚点零花钱~</p>
-        <a href="https://www.aliyun.com/minisite/goods?userCode=l1guudnn" target="_blank">
-          <img src="../imgs/aliyun.png" style="width:100%" />
-        </a>
-        <a href="https://url.cn/5Uq6Wjf" target="_blank">
-          <img src="../imgs/tencent.jpg" style="width:100%" />
-        </a>
+    <nm-dialog v-bind="dialog" class="nm-ad" :visible.sync="visible">
+      <div class="nm-ad-wrapper">
+        <h2 class="title">落魄.Net程序员，在线创业~</h2>
+        <p class="desc">家乡苹果，又脆又甜，现摘现发</p>
+        <p class="desc">欢迎大家打开微信扫描下方二维码购买~</p>
+        <img class="code" src="../assets/code.png" />
+        <img v-for="i in 5" :key="i" :src="require('../assets/' + (i + 1) + '.jpg')" />
       </div>
     </nm-dialog>
   </div>
@@ -22,12 +20,18 @@ export default {
     return {
       visible: false,
       dialog: {
-        title: '2020采购季，海量云产品低至0.6折',
+        title: '落魄.Net程序员，在线创业~',
         icon: 'gift',
         width: '900px',
-        height: '90%'
+        height: '90%',
+        fullscreen: true
       }
     }
+  },
+  created() {
+    setTimeout(() => {
+      this.visible = true
+    }, 1000)
   }
 }
 </script>
@@ -44,6 +48,29 @@ export default {
 .nm-toolbar-button.bell {
   .nm-icon {
     animation: ringing 2s infinite ease 1s;
+  }
+}
+.nm-ad {
+  .nm-dialog-main {
+    padding-bottom: 20px;
+  }
+}
+.nm-ad-wrapper {
+  padding: 20px;
+  text-align: center;
+
+  .title {
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  .desc {
+    margin: 20px 0;
+    font-size: 20px;
+  }
+
+  img {
+    width: 100%;
   }
 }
 @-moz-keyframes ringing {
