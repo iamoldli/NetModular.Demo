@@ -5,8 +5,21 @@
     </el-badge>
     <nm-dialog v-bind="dialog" class="nm-ad" :visible.sync="visible">
       <div class="nm-ad-wrapper">
+        <el-row>
+          <el-col :span="12">
+            <a href="https://www.aliyun.com/daily-act/ecs/care?userCode=l1guudnn" target="_blank">
+              <img style="margin-bottom:20px;width:100%" src="../assets/1180-310-1.jpg" />
+            </a>
+          </el-col>
+          <el-col :span="12">
+            <a href="https://www.aliyun.com/daily-act/ecs/care?userCode=l1guudnn" target="_blank">
+              <img style="margin-bottom:20px;width:100%" src="../assets/1180-310-2.jpg" />
+            </a>
+          </el-col>
+        </el-row>
+
         <h2 class="title">落魄.Net程序员，在线创业~</h2>
-        <p class="desc">家乡苹果，又脆又甜，现摘现发</p>
+        <p class="desc">家乡苹果，又脆又甜，每天上午10点现摘现发，请下单的小伙伴不要急~</p>
         <p class="desc">欢迎大家打开微信扫描下方二维码购买~</p>
         <img class="code" src="../assets/code.png" />
         <img v-for="i in 5" :key="i" :src="require('../assets/' + (i + 1) + '.jpg')" />

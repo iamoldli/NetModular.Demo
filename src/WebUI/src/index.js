@@ -1,10 +1,17 @@
 import components from './components'
+import routes from './routes'
+import VCharts from 'v-charts'
+
 export default {
   module: {
     name: 'demo',
     code: 'demo',
     version: '1.0.0',
-    description: 'demo'
+    description: 'NetModular demo'
   },
-  components
+  routes,
+  components,
+  callback({ Vue }) {
+    Vue.use(VCharts)
+  }
 }
