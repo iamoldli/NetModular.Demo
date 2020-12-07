@@ -5,24 +5,9 @@
     </el-badge>
     <nm-dialog v-bind="dialog" class="nm-ad" :visible.sync="visible">
       <div class="nm-ad-wrapper">
-        <el-row>
-          <el-col :span="12">
-            <a href="https://www.aliyun.com/daily-act/ecs/care?userCode=l1guudnn" target="_blank">
-              <img style="margin-bottom:20px;width:100%" src="../assets/1180-310-1.jpg" />
-            </a>
-          </el-col>
-          <el-col :span="12">
-            <a href="https://www.aliyun.com/daily-act/ecs/care?userCode=l1guudnn" target="_blank">
-              <img style="margin-bottom:20px;width:100%" src="../assets/1180-310-2.jpg" />
-            </a>
-          </el-col>
-        </el-row>
-
-        <h2 class="title">落魄.Net程序员，在线创业~</h2>
-        <p class="desc">家乡苹果，又脆又甜，每天上午10点现摘现发，请下单的小伙伴不要急~</p>
-        <p class="desc">欢迎大家打开微信扫描下方二维码购买~</p>
-        <img class="code" src="../assets/code.png" />
-        <img v-for="i in 5" :key="i" :src="require('../assets/' + (i + 1) + '.jpg')" />
+        <nm-icon class="nm-size-100" name="work" />
+        <h1 class="nm-size-30">广告位招租~</h1>
+        <h1 class="nm-size-30">QQ：860996606</h1>
       </div>
     </nm-dialog>
   </div>
@@ -33,7 +18,7 @@ export default {
     return {
       visible: false,
       dialog: {
-        title: '落魄.Net程序员，在线创业~',
+        title: '找工作！',
         icon: 'gift',
         width: '900px',
         height: '90%',
@@ -71,19 +56,9 @@ export default {
 .nm-ad-wrapper {
   padding: 20px;
   text-align: center;
-
-  .title {
-    font-size: 30px;
-    font-weight: 700;
-  }
-
-  .desc {
-    margin: 20px 0;
+  h2 {
+    margin: 15px 0;
     font-size: 20px;
-  }
-
-  img {
-    width: 100%;
   }
 }
 @-moz-keyframes ringing {
