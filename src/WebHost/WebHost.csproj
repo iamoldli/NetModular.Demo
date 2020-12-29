@@ -17,7 +17,7 @@
     <PackageReference Include="NetModular.Lib.Data.MySql" Version="2.1.5" />
     <PackageReference Include="NetModular.Lib.Data.SQLite" Version="2.1.5" />
     <PackageReference Include="NetModular.Lib.Excel.EPPlus" Version="2.1.0" />
-		<PackageReference Include="NetModular.Lib.Host.Web" Version="2.1.6" />
+		<PackageReference Include="NetModular.Lib.Host.Web" Version="2.1.7" />
 		<PackageReference Include="NetModular.Lib.OSS.Local" Version="2.1.1" />
 		<PackageReference Include="NetModular.Module.Admin.Quartz" Version="2.1.3" />
 		<PackageReference Include="NetModular.Module.Admin.Web" Version="2.1.3" />
