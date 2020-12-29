@@ -4,7 +4,7 @@ FROM mcr.microsoft.com/dotnet/core/aspnet:3.1-buster-slim AS base
 WORKDIR /app
 EXPOSE 6220
 # 复制字体
-COPY /usr/share/fonts/truetype /usr/share/fonts/truetype
+COPY ./arial.ttf /usr/share/fonts/arial.ttf
 
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1-buster AS build
 WORKDIR /src
