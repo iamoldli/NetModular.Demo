@@ -1,7 +1,7 @@
 const isDev = process.env.NODE_ENV !== 'production'
 
 const config = {
-  baseUrl: 'https://pi.iamoldli.com:6220/api/'
+  baseUrl: 'https://pi.iamoldli.com:6220/api/',
 }
 
 // 开发模式
