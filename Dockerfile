@@ -1,21 +1,23 @@
 #See https://aka.ms/containerfastmode to understand how Visual Studio uses this Dockerfile to build your images for faster debugging.
 
-FROM mcr.microsoft.com/dotnet/core/aspnet:3.1-focal-arm64v8 AS base
-WORKDIR /app
-EXPOSE 6220
-# 复制字体
-COPY ./arial.ttf /usr/share/fonts/arial.ttf
-
-FROM mcr.microsoft.com/dotnet/core/sdk:3.1-focal-arm64v8 AS build
+# 构建阶段，使用 SDK 镜像
+FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 WORKDIR /src
 COPY . .
 WORKDIR "/src/src/WebHost"
-RUN dotnet build "WebHost.csproj" -c Release -o /app/build
-
-FROM build AS publish
 RUN dotnet publish "WebHost.csproj" -c Release -o /app/publish
 
-FROM base AS final
+# 发布阶段，使用运行时镜像
+FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS final
 WORKDIR /app
-COPY --from=publish /app/publish .
+
+# 拷贝字体文件（如果用于运行阶段）
+COPY ./arial.ttf /usr/share/fonts/arial.ttf
+
+# 拷贝发布产物
+COPY --from=build /app/publish .
+
+# 暴露端口
+EXPOSE 6220
+
 ENTRYPOINT ["dotnet", "NetModular.Demo.WebHost.dll"]
